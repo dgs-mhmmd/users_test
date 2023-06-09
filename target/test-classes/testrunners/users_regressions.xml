@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="User Api Test" thread-count="4" verbose="2">
+
+    <listeners>
+        <listener class-name="org.users.ExtentReportListener"/>
+    </listeners>
+
+    <test name="User Api Test" parallel="none">
+        <parameter name="browser" value="chrome"/>
+        <classes>
+            <class name="org.users.test.User"/>
+        </classes>
+    </test>
+
+</suite>
